@@ -2,6 +2,8 @@ package com.badcoffee.shittymod;
 
 import com.badcoffee.shittymod.blocks.ModBlocks;
 import com.badcoffee.shittymod.blocks.ShittyBlock;
+import com.badcoffee.shittymod.items.ShittyShard;
+import com.badcoffee.shittymod.items.ShittyWrench;
 import com.badcoffee.shittymod.setup.ClientProxy;
 import com.badcoffee.shittymod.setup.IProxy;
 import com.badcoffee.shittymod.setup.ModSetup;
@@ -9,6 +11,7 @@ import com.badcoffee.shittymod.setup.ServerProxy;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ShieldItem;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -55,6 +58,8 @@ public class ShittyMod {
         public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
             Item.Properties properties = new Item.Properties().group(ModSetup.itemGroup);
             event.getRegistry().register(new BlockItem(ModBlocks.SHITTYBLOCK, properties).setRegistryName("shittyblock"));
+            event.getRegistry().register(new ShittyShard());
+            event.getRegistry().register(new ShittyWrench());
         }
     }
 }

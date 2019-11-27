@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "texture": {
+    "layer0": "shittymod:item/shittyshard"
+  }
+}
