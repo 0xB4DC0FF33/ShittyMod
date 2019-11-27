@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "$#",
+    "#$"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:clay_ball"
+    },
+    "$": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "item": "shittymod:shittyblock",
+    "count": 2
+  }
+}
