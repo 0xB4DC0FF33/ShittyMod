@@ -1,4 +1,4 @@
-# Shitty Mod (quite litterally)
+# Shitty Mod (quite literally)
 
 
 Just a shitty mod for minecraft that i develop to learn a new language ... 
