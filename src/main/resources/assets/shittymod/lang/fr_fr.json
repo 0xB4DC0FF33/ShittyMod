@@ -1,3 +1,6 @@
 {
-  "block.shittymod.shittyblock": "Bloc de merde"
+  "_comment": "BLOCKS",
+  "block.shittymod.shittyblock": "Bloc de merde",
+  "_comment": "CREATIVE TABS",
+  "itemGroup.shittymod": "Mod de merde"
 }

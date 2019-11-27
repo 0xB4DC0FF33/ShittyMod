@@ -4,6 +4,7 @@ import com.badcoffee.shittymod.blocks.ModBlocks;
 import com.badcoffee.shittymod.blocks.ShittyBlock;
 import com.badcoffee.shittymod.setup.ClientProxy;
 import com.badcoffee.shittymod.setup.IProxy;
+import com.badcoffee.shittymod.setup.ModSetup;
 import com.badcoffee.shittymod.setup.ServerProxy;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -25,6 +26,7 @@ import java.util.stream.Collectors;
 public class ShittyMod {
 
     public static IProxy proxy = DistExecutor.runForDist(() -> () -> new ClientProxy(), () -> () -> new ServerProxy());
+    public static ModSetup setup = new ModSetup();
 
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
@@ -37,7 +39,8 @@ public class ShittyMod {
     }
 
     private void setup(final FMLCommonSetupEvent event) {
-
+        setup.init();
+        proxy.init();
     }
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
@@ -50,7 +53,8 @@ public class ShittyMod {
         }
         @SubscribeEvent
         public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
-            event.getRegistry().register(new BlockItem(ModBlocks.SHITTYBLOCK, new Item.Properties()).setRegistryName("shittyblock"));
+            Item.Properties properties = new Item.Properties().group(ModSetup.itemGroup);
+            event.getRegistry().register(new BlockItem(ModBlocks.SHITTYBLOCK, properties).setRegistryName("shittyblock"));
         }
     }
 }

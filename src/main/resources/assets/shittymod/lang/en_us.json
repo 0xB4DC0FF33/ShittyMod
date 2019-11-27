@@ -1,3 +1,6 @@
 {
-  "block.shittymod.shittyblock": "Shitty Block"
+  "_comment": "BLOCKS",
+  "block.shittymod.shittyblock": "Shitty Block",
+  "_comment": "CREATIVE TABS",
+  "itemGroup.shittymod": "Shitty Mod"
 }
