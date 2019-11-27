@@ -7,6 +7,7 @@ Yeah java is evil and actually wants you dead but hey .... guess i'm kinda into 
 
 ## Random stuff to note
 Mod version : 0.0.1 Not even close to be a real mod
+
 For minecraft 1.14.4
 
 
@@ -19,9 +20,11 @@ This mods is prett much the incarnation of uselessness... but if you really want
 To craft the shitty block, you're gonna need some clay and dirt, place it like this in a crafting table :
 
 clay dirt
+
 dirt clay
 
-and ... done ... you have now two magnificent shitty blocks... your mom must be proud
+
+and ... done ! You have now two magnificent shitty blocks ! Your mom must be proud of you !
 
 
 ## Modpack use
